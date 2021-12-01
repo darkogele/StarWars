@@ -1,0 +1,43 @@
+<h1> Create starship</h1>
+
+<div class="text-center">
+  <button class="text-center" mat-raised-button color="primary" routerLink="/starship-list">List of Ships</button>
+</div>
+
+<form [formGroup]="starShipForm">
+  <div class="row">
+
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter Ship Name" formControlName="name" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>manufacturer</mat-label>
+      <input matInput placeholder="Enter Ship Name" formControlName="manufacturer" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>costInCredits</mat-label>
+      <input matInput placeholder="Enter Ship Name" formControlName="costInCredits" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>crew</mat-label>
+      <input matInput placeholder="Enter Ship Name" formControlName="crew" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Ncreatedame</mat-label>
+      <input matInput placeholder="Enter Ship Name" formControlName="created" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>pilots</mat-label>
+      <input matInput placeholder="Enter Ship Name" formControlName="pilots" />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" [disabled]="!starShipForm.valid" (click)="createShip()">Create
+      Ship</button>
+  </div>
+</form>

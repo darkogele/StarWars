@@ -1,0 +1,29 @@
+<h1>Created ships </h1>
+
+<div class="text-center">
+  <h3 *ngIf="starShips.length == 0" style="color: red;">No star Ships created</h3>
+  <a mat-stroked-button color="primary" routerLink="/create-starship">Create Starship</a>
+</div>
+
+<br />
+
+<div *ngIf="starShips.length > 0" class="text-center">
+  <mat-card *ngFor="let ship of starShips">
+    <mat-card-title>{{ ship.name }}</mat-card-title>
+
+    <mat-card-content>
+      <p> Crew: {{ship.crew}} </p>
+      <p> Pilots: {{ship.pilots}} </p>
+      <p> Manufacturer: {{ship.manufacturer}} </p>
+      <p> Passengers: {{ship.passengers}} </p>
+      <p> Created: {{ship.created}} </p>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-stroked-button color="primary">Update</button>
+      <button mat-stroked-button color="warn" (click)="deleteShip(ship)">Delete</button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
