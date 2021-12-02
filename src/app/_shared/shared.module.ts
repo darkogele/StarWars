@@ -12,11 +12,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const materialModules = [
-  BrowserAnimationsModule,
   MatToolbarModule,
   MatButtonModule,
   FormsModule,
