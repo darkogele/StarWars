@@ -30,6 +30,6 @@ export class StarshipsComponent implements OnInit {
 
   createShip() {
     this.startShipService.registerShip(this.starShipForm.value);
-    this.router.navigate(['starship-list']);
+    this.router.navigate(['starship']);
   }
 }

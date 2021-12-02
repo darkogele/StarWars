@@ -7,9 +7,9 @@ import { StarshipsComponent } from './StarshipList/starships/starships.component
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'create-starship', component: StarshipsComponent },
-  { path: 'starship-list', component: StarshipListComponent },
-  { path: 'planets-list', component: PlanetsComponent },
+  { path: 'starship/add', component: StarshipsComponent },
+  { path: 'starship', component: StarshipListComponent },
+  { path: 'planets', component: PlanetsComponent },
 ];
 
 @NgModule({
