@@ -12,7 +12,6 @@ import { MatListModule } from '@angular/material/list';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { StarshipsComponent } from './starships/starships.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,10 +21,10 @@ import { StarshipListComponent } from './StarshipList/StarshipList.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanetsComponent } from './planets/planets.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     NavComponent,
     StarshipsComponent,
     StarshipListComponent,
@@ -49,7 +48,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatListModule,
     MatMenuModule,
     MatButtonToggleModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
