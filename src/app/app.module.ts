@@ -19,16 +19,15 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
 import { StarshipListComponent } from './StarshipList/StarshipList.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PlanetsComponent } from './planets/planets.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HomeModule } from './home/home.module';
+import { PlanetsModule } from './planets/planets.module';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     StarshipsComponent,
-    StarshipListComponent,
-    PlanetsComponent
+    StarshipListComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +48,8 @@ import { HomeModule } from './home/home.module';
     MatMenuModule,
     MatButtonToggleModule,
     MatPaginatorModule,
-    HomeModule
+    HomeModule,
+    PlanetsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
