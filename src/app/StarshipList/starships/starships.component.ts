@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { StarshipService } from '../_services/starship.service';
+import { StarshipService } from '../../_services/starship.service';
 
 @Component({
   selector: 'app-starships',

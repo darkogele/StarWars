@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { StarshipListComponent } from './StarshipList/StarshipList.component';
-import { StarshipsComponent } from './starships/starships.component';
+import { StarshipsComponent } from './StarshipList/starships/starships.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
