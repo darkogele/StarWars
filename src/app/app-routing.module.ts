@@ -2,13 +2,11 @@ import { PlanetsComponent } from './planets/planets.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { StarshipListComponent } from './StarshipList/StarshipList.component';
-import { StarshipsComponent } from './StarshipList/starships/starships.component';
+import { StarshipsRoutingModule } from './StarshipList/starships-routing.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'starship/add', component: StarshipsComponent },
-  { path: 'starship', component: StarshipListComponent },
+  { path: 'starship', loadChildren: () => StarshipsRoutingModule },
   { path: 'planets', component: PlanetsComponent },
 ];
 
